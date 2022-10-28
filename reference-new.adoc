@@ -1,0 +1,167 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.9.1 comprend un certain nombre de nouvelles fonctionnalités et améliorations. 
+---
+= Nouveautés de Cloud Volumes ONTAP 9.9.1
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.9.1 comprend un certain nombre de nouvelles fonctionnalités et améliorations.
+
+D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations.
+
+
+
+== Les instances c4, m4 et r4 ne sont plus prises en charge (28 octobre 2022)
+
+Dans AWS, les types d'instances EC2 c4, m4 et r4 ne sont plus pris en charge par Cloud Volumes ONTAP. Si un système existant fonctionne sur un type d'instance c4, m4 ou r4, vous devez passer à un type d'instance dans la famille d'instances c5, m5 ou r5.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Découvrez comment modifier le type d'instance EC2 pour Cloud Volumes ONTAP"^].
+
+Reportez-vous à la section link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Support NetApp"^] pour en savoir plus sur la fin de disponibilité et la prise en charge de ces types d'instances.
+
+
+
+== 9.9.1 P8 (15 mai 2022)
+
+Le correctif 9.9.1 P8 est maintenant disponible pour Cloud Volumes ONTAP dans Microsoft Azure si vous disposez d'un connecteur exécutant la version 3.9.13 ou ultérieure. Cloud Manager vous invite à mettre à niveau vos systèmes existants vers cette version de correctif.
+
+https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P8["Consultez la liste des bugs corrigés dans le correctif P8"^] (Identifiant du site du support NetApp requis).
+
+
+
+== 9.9.1 P7 (21 février 2022)
+
+Le correctif 9.9.1 P7 est maintenant disponible pour Cloud Volumes ONTAP dans Microsoft Azure si vous disposez d'un connecteur exécutant la version 3.9.15 ou ultérieure. Cloud Manager vous invite à mettre à niveau vos systèmes existants vers cette version de correctif.
+
+https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P7["Consultez la liste des bugs corrigés dans le patch P7"^] (Identifiant du site du support NetApp requis).
+
+
+
+== 9.9.1 correctifs (3 février 2022)
+
+Deux nouveaux correctifs sont disponibles pour Cloud Volumes ONTAP :
+
+* 9.9.1 P6 dans AWS et Google Cloud
+* 9.9.1 P3 dans Microsoft Azure
+
+
+Cloud Manager vous invite à mettre à niveau vos systèmes existants vers ces versions de correctifs.
+
+* https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P6["Consultez la liste des bugs corrigés dans le correctif P6"^] (Identifiant du site du support NetApp requis)
+* https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P3["Consultez la liste des bugs corrigés dans le patch P3"^] (Identifiant du site du support NetApp requis)
+
+
+
+
+== 9.9.1 GA (21 juillet 2021)
+
+La version GA de Cloud Volumes ONTAP 9.9.1 est désormais disponible. La version GA inclut des correctifs.
+
+Cloud Manager vous invite à mettre à niveau des systèmes existants exécutant l'une des versions suivantes : 9.9.1 Release candidate, 9.9 ou 9.8.
+
+
+
+== Mise à jour 9.9.1 (7 juillet 2021)
+
+Les modifications suivantes ont été apportées à Cloud Manager 3.9.8.
+
+* De nouvelles méthodes de charge sont disponibles pour Cloud Volumes ONTAP.
++
+** *BYOL* basée sur la capacité : une licence basée sur la capacité vous permet de payer pour Cloud Volumes ONTAP par To de capacité. La licence est associée à votre compte NetApp et vous permet de créer plusieurs systèmes Cloud Volumes ONTAP, tant que la capacité disponible par le biais de votre licence est suffisante. Une licence basée sur la capacité est disponible sous la forme d'un package, soit _Essentials_ soit _Professional_.
+** *Offre Freemium* : Freemium vous permet d'utiliser toutes les fonctionnalités Cloud Volumes ONTAP gratuitement auprès de NetApp (les fournisseurs de cloud sont toujours facturés). Vous êtes limité à 500 Gio de capacité allouée par système, et il n'existe pas de contrat de support. Vous pouvez avoir jusqu'à 10 systèmes Freemium.
++
+link:concept-licensing.html["En savoir plus sur ces options de licence"].
+
+
+
+* Dans AWS, Cloud Volumes ONTAP prend désormais en charge le type d'instance grand format m5dn.24x7 avec les méthodes de chargement suivantes : PAYGO Premium, licences basées sur la capacité (BYOL) et licences basées sur des nœuds (BYOL).
+* Dans Google Cloud, Cloud Volumes ONTAP prend désormais en charge des disques persistants équilibrés (pd-équilibré). Ces disques SSD permettent d'équilibrer les performances et les coûts grâce à une réduction des IOPS par Gio.
+* Le type de machine Custom-4-16384 n'est plus pris en charge par les nouveaux systèmes Cloud Volumes ONTAP dans Google Cloud.
++
+Si vous disposez d'un système existant fonctionnant sur ce type de machine, vous pouvez continuer à l'utiliser, mais nous vous recommandons de passer au type de machine n2-standard-4.
+
+
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Découvrez les nouveautés de Cloud Manager"^].
+
+
+
+== Mise à jour 9.9.1 (3 juin 2021)
+
+La récente version de Cloud Manager 3.9.7 introduit le support d'un nouveau package professionnel qui permet d'bundle Cloud Volumes ONTAP et Cloud Backup Service à l'aide d'un contrat annuel provenant d'AWS Marketplace.
+
+link:reference-configs-aws.html["En savoir plus sur cette option de licence."]
+
+
+
+== 9.9.1 candidat à la sortie (24 mai 2021)
+
+Le candidat à la mise à jour Cloud Volumes ONTAP 9.9.1 est désormais disponible dans AWS, Azure et Google Cloud Platform.
+
+Outre les fonctionnalités introduites avec https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.9.1"^], Cette version de Cloud Volumes ONTAP inclut les éléments suivants :
+
+*  S3 support in Azure
+*  performance in AWS with high write speed
+*  boot disk in AWS
+
+
+
+
+=== Prise en charge d'ONTAP S3 dans Azure
+
+Vous pouvez désormais fournir le stockage objet S3 à partir d'Cloud Volumes ONTAP dans Azure. Cloud Volumes ONTAP pour Microsoft Azure prend en charge S3 en tant qu'option pour le stockage scale-out, en plus des protocoles classiques basés sur des fichiers tels que NFS et SMB.
+
+Notez ce qui suit :
+
+* L'utilisation principale d'ONTAP S3 avec Cloud Volumes ONTAP est un magasin d'objets à usage générique.
+* À l'heure actuelle, le protocole S3 n'est pas pris en charge par Cloud Volumes ONTAP dans AWS ou dans Google Cloud.
+* Cloud Manager ne fournit aucune fonctionnalité de gestion pour la fonctionnalité ONTAP S3.
+
+
+Il est recommandé d'utiliser l'interface de ligne de commandes pour configurer l'accès des clients S3 à partir d'Cloud Volumes ONTAP. Pour plus de détails, reportez-vous à la http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["Guide de l'alimentation de la configuration S3"^].
+
+
+
+=== Performances améliorées dans AWS avec une vitesse d'écriture élevée
+
+Nous avons amélioré le débit d'Cloud Volumes ONTAP lorsque https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["vitesse d'écriture élevée"^] est activé sur un type d'instance pris en charge.
+
+
+
+=== Disque de démarrage io2 dans AWS
+
+Dans AWS, le disque de démarrage d'un nouveau système Cloud Volumes ONTAP est désormais un volume SSD d'IOPS (io2) provisionné. les volumes io2 offrent une fiabilité supérieure à celle des volumes io1, qui étaient auparavant utilisés pour les disques de démarrage.
+
+
+
+== Version requise de Cloud Manager Connector
+
+Cloud Manager Connector doit exécuter la version 3.9.6 ou ultérieure pour déployer de nouveaux systèmes Cloud Volumes ONTAP 9.9.1 et mettre à niveau les systèmes existants vers la version 9.9.1.
+
+
+
+== Notes de mise à niveau
+
+* La mise à niveau d'Cloud Volumes ONTAP doit être effectuée depuis Cloud Manager. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
+* Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.9.1 à partir de la version 9.9.0 et de la version 9.8. Avec Cloud Manager, vous êtes invité à mettre à niveau vos systèmes Cloud Volumes ONTAP 9.9.0 et 9.8 vers la version 9.9.1.
++
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque Cloud Manager vous informe"^].
+
+* La mise à niveau d'un système à un nœud unique permet de mettre le système hors ligne pendant 25 minutes au cours desquelles les E/S sont interrompues.
+* La mise à niveau d'une paire haute disponibilité s'effectue sans interruption et les E/S sont continues. Au cours de ce processus de mise à niveau sans interruption, chaque nœud est mis à niveau en tandem afin de continuer à traiter les E/S aux clients.
+
+
+
+
+=== DS3_v2
+
+Depuis la version 9.9.1, le type de machine virtuelle DS3_v2 n'est plus pris en charge avec les systèmes Cloud Volumes ONTAP nouveaux et existants. Si un système existant fonctionne sur ce type de machine virtuelle, vous devez changer de type de machine virtuelle avant de passer à la version 9.9.1.
