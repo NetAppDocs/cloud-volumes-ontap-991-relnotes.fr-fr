@@ -109,9 +109,9 @@ Le candidat à la mise à jour Cloud Volumes ONTAP 9.9.1 est désormais disponib
 
 Outre les fonctionnalités introduites avec https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.9.1"^], Cette version de Cloud Volumes ONTAP inclut les éléments suivants :
 
-*  S3 support in Azure
-*  performance in AWS with high write speed
-*  boot disk in AWS
+* <<Prise en charge d'ONTAP S3 dans Azure>>
+* <<Performances améliorées dans AWS avec une vitesse d'écriture élevée>>
+* <<Disque de démarrage io2 dans AWS>>
 
 
 

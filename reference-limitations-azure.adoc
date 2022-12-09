@@ -38,12 +38,6 @@ Les limites suivantes affectent les paires HA Cloud Volumes ONTAP dans Microsoft
 * NFSv4 n'est pas pris en charge. NFSv3 est pris en charge.
 * Les paires HAUTE DISPONIBILITÉ ne sont pas prises en charge dans certaines régions.
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste des régions Azure prises en charge"^].
+https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste des régions Azure prises en charge"^]
 
 
-
-
-
-== Le paiement à l'utilisation n'est pas disponible pour les partenaires de FST
-
-Si vous êtes un partenaire de fournisseur de solutions cloud Microsoft, vous ne pouvez pas déployer Cloud Volumes ONTAP Explore, Standard ou Premium car les abonnements avec paiement à l'utilisation ne sont pas disponibles pour les partenaires d'un FST. Vous devez acheter une licence et déployer Cloud Volumes ONTAP BYOL.

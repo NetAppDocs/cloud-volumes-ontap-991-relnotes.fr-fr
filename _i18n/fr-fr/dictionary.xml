@@ -20,7 +20,6 @@
   <block id="a5a1e4029969159a5f8fdeddd3fb7e1b" category="paragraph">Tous les autres emplacements, versions, configurations et licences ne sont pas pris en charge.</block>
   <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP prend en charge les instances de machine virtuelle réservées et à la demande</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP peut être exécuté sur une instance de machine virtuelle réservée ou à la demande auprès de votre fournisseur cloud. Les autres types d'instances de VM ne sont pas pris en charge.</block>
-  <block id="207289e471510410b8d11da3001f65d7" category="section-title">Les solutions automatiques de gestion des ressources applicatives ne doivent pas être utilisées</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">Les solutions automatiques de gestion des ressources applicatives ne doivent pas gérer les systèmes Cloud Volumes ONTAP. Cela peut entraîner une modification de la configuration non prise en charge. Par exemple, la solution peut remplacer Cloud Volumes ONTAP par un type d'instance de machine virtuelle non pris en charge.</block>
   <block id="1d7a5501cfb31aff808abb63ef9085c2" category="section-title">Les mises à jour logicielles doivent être effectuées par Cloud Manager</block>
   <block id="93e3c3d0ea43d600b3c3cd4548ea3987" category="paragraph">La mise à niveau d'Cloud Volumes ONTAP doit être effectuée depuis Cloud Manager. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.</block>
@@ -377,9 +376,6 @@
   <block id="2d62580dcf116f839bad7027ac992878" category="list-text">NFSv4 n'est pas pris en charge. NFSv3 est pris en charge.</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="list-text">Les paires HAUTE DISPONIBILITÉ ne sont pas prises en charge dans certaines régions.</block>
   <block id="1538d38eb23a96781db500ec7bd30195" category="inline-link">Consultez la liste des régions Azure prises en charge</block>
-  <block id="f5b8e6c4c4b082cf610f078e361a727f" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block>.</block>
-  <block id="e4f5b6f59db7bfa0e08c02262ddbd654" category="section-title">Le paiement à l'utilisation n'est pas disponible pour les partenaires de FST</block>
-  <block id="f2ff5834d93c258f0fc4ad6cf6a17942" category="paragraph">Si vous êtes un partenaire de fournisseur de solutions cloud Microsoft, vous ne pouvez pas déployer Cloud Volumes ONTAP Explore, Standard ou Premium car les abonnements avec paiement à l'utilisation ne sont pas disponibles pour les partenaires d'un FST. Vous devez acheter une licence et déployer Cloud Volumes ONTAP BYOL.</block>
   <block id="6a8a2e92f318dbd4f6a8e47b03350d4d" category="summary">Cloud Volumes ONTAP présente des limites de configuration du stockage dans Azure pour des opérations fiables. Pour des performances optimales, ne configurez pas votre système aux valeurs maximales.</block>
   <block id="e622ddac1a96836929babb5b993749ba" category="doc">Limites de stockage dans Azure</block>
   <block id="e6607992aca7a2cd8b89f152b0cf553d" category="section-title">Limite des disques et du Tiering en fonction de la taille des machines virtuelles</block>
@@ -554,7 +550,6 @@
   <block id="b5050f17750ec84285bec219771841c4" category="section-title">Limitations de Google Private Service Connect</block>
   <block id="9fb3c7aadbb59d428d3c01efb5689f4b" category="inline-link">Google Private Service Connect</block>
   <block id="7af98a0e0cd62cd4ddc103341d51fda2" category="inline-link">Terminaux API Cloud Manager</block>
-  <block id="948671a13623cbbc9f65ca511ed257a3" category="paragraph">Si vous tirez parti<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Dans le VPC dans lequel vous déployez Cloud Volumes ONTAP, vous devez implémenter des enregistrements DNS qui transmettent le trafic au trafic requis<block ref="acf94572d3bfe8bd5bc5166d196eeacc" category="inline-link-rx"></block>.</block>
   <block id="406156e49006d700786c581646d94504" category="paragraph">Le Tiering des données d'Cloud Volumes ONTAP dans un compartiment Google Cloud Storage n'est pas pris en charge actuellement avec Private Service Connect.</block>
   <block id="5520e32d61a58dff51fc6730939c3baf" category="summary">Cloud Volumes ONTAP présente des limites de configuration du stockage dans Google Cloud pour assurer la fiabilité des opérations. Pour des performances optimales, ne configurez pas votre système aux valeurs maximales.</block>
   <block id="c73908091fadeb9dec16abab42821644" category="doc">Limites de stockage dans Google Cloud</block>
@@ -672,4 +667,11 @@
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Toute la documentation de Cloud Manager</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">Cloud ONTAP</block>
+  <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">Pour une paire HA, la capacité autorisée est-elle limitée par nœud ou par paire HA entière ?</block>
+  <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">Dans le cas d'une paire haute disponibilité, les données en miroir sont-elles prises en compte par rapport à la limite de capacité sous licence ?</block>
+  <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">Les solutions de gestion automatique des ressources applicatives ne doivent pas être utilisées</block>
+  <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">Pour la haute disponibilité, la capacité de licence est-elle limitée par nœud ou pour la paire HA entière ?</block>
+  <block id="da934d10ecc6d50a861d9470630d4989" category="paragraph">Si vous tirez parti<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Dans le VPC dans lequel vous déployez Cloud Volumes ONTAP, vous devez implémenter des enregistrements DNS qui transmettent le trafic au trafic requis<block ref="c291f5ab92cbab017e6f29ee8a0edb54" category="inline-link-rx"></block>.</block>
+  <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">Pour un système haute disponibilité dans AWS, est-ce que les données en miroir sont prises en compte avec la limite de capacité ?</block>
+  <block id="1f129df010c594cb0d37bd30745a3820" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block></block>
 </blocks>

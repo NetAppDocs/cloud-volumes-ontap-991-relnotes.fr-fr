@@ -46,6 +46,7 @@ NetApp ne prend pas en charge le dépassement de la limite de capacité système
 
 | Licence basée sur la capacité | 2 Pio 
 |===
+.Pour la haute disponibilité, la capacité de licence est-elle limitée par nœud ou pour la paire HA entière ?
 La limite de capacité s'adresse à l'ensemble de la paire haute disponibilité. Il n'est pas par nœud. Par exemple, si vous utilisez la licence Premium, vous pouvez disposer d'une capacité pouvant atteindre 368 Tio entre les deux nœuds.
 
 
