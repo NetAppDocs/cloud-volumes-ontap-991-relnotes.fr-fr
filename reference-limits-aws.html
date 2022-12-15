@@ -184,6 +184,13 @@
     </li>
     <li>
       
+      <a href="https://docs.netapp.com/fr-fr/cloud-volumes-ontap-9120-relnotes/reference-limits-aws.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
       <a href="https://docs.netapp.com/fr-fr/cloud-volumes-ontap-9111-relnotes/reference-limits-aws.html" target="_self">
         <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.11.1</span></span>
       </a>
@@ -768,7 +775,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/fr-fr/cloud-manager-family/">Cloud Manager</a>
+          <a href="https://docs.netapp.com/fr-fr/cloud-manager-family/">BlueXP</a>
         </li>
         
 
@@ -804,7 +811,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-09 16:30:56 +0000">12/09/2022</time>
+    <time datetime="2022-12-15 21:18:58 +0000">12/15/2022</time>
     
   
 
@@ -828,7 +835,7 @@
 <p>La capacité système maximale d&#8217;un système Cloud Volumes ONTAP est déterminée par sa licence. La capacité système maximale inclut le stockage sur disque et le stockage objet utilisé pour le Tiering des données.</p>
 </div>
 <div class="paragraph">
-<p>NetApp ne prend pas en charge le dépassement de la limite de capacité système. Si vous atteignez la limite de capacité sous licence, Cloud Manager affiche un message d&#8217;action requise et ne vous permet plus d&#8217;ajouter des disques supplémentaires.</p>
+<p>NetApp ne prend pas en charge le dépassement de la limite de capacité système. Si vous atteignez la limite de capacité sous licence, BlueXP affiche un message d&#8217;action requise et ne vous permet plus d&#8217;ajouter des disques supplémentaires.</p>
 </div>
 <div class="paragraph">
 <p>Pour certaines configurations, les limites de disque vous empêchent d&#8217;atteindre la limite de capacité en utilisant uniquement des disques. Dans ce cas, vous pouvez atteindre la limite de capacité de <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"tiering des données inactives vers le stockage objet"</a>. Reportez-vous aux limites de capacité et de disques ci-dessous pour plus de détails.</p>
@@ -877,7 +884,7 @@
 </div>
 <div class="paragraph">
 <div class="title">Pour un système haute disponibilité dans AWS, est-ce que les données en miroir sont prises en compte avec la limite de capacité ?</div>
-<p>Non, ce n&#8217;est pas le cas. Les données d&#8217;une paire HA AWS sont mises en miroir de manière synchrone entre les nœuds, de sorte que les données soient disponibles en cas de panne. Par exemple, si vous achetez un disque de 8 To sur le nœud A, Cloud Manager alloue également un disque de 8 To sur le nœud B utilisé pour les données en miroir. Tandis que la capacité de 16 Tio a été provisionnée, seuls 8 Tio compte par rapport à la limite de licence.</p>
+<p>Non, ce n&#8217;est pas le cas. Les données d&#8217;une paire HA AWS sont mises en miroir de manière synchrone entre les nœuds, de sorte que les données soient disponibles en cas de panne. Par exemple, si vous achetez un disque de 8 Tio sur le nœud A, BlueXP alloue également un disque de 8 Tio sur le nœud B utilisé pour les données en miroir. Tandis que la capacité de 16 Tio a été provisionnée, seuls 8 Tio compte par rapport à la limite de licence.</p>
 </div>
 </div>
 </div>
@@ -1547,7 +1554,7 @@
 <p>Ce chiffre indique le nombre d&#8217;adresses IP restantes_ privées disponibles sur le port e0a après le déploiement et la configuration de Cloud Volumes ONTAP. Par exemple, un système *.2xlarge prend en charge un maximum de 15 adresses IP par interface réseau. Lorsqu&#8217;une paire haute disponibilité est déployée dans un seul groupe de disponibilité, 5 adresses IP privées sont allouées au port e0a. Par conséquent, une paire haute disponibilité utilisant un type d&#8217;instance *.2 x grande taille dispose de 10 adresses IP privées restantes pour l&#8217;ajout de machines virtuelles de stockage supplémentaires.</p>
 </li>
 <li>
-<p>Le nombre indiqué dans ces colonnes inclut la VM de stockage initiale créée par défaut par Cloud Manager. Par exemple, si 24 est répertorié dans cette colonne, cela signifie que vous pouvez créer 23 machines virtuelles de stockage supplémentaires pour un total de 24.</p>
+<p>Le nombre indiqué dans ces colonnes inclut la machine virtuelle de stockage initiale que BlueXP crée par défaut. Par exemple, si 24 est répertorié dans cette colonne, cela signifie que vous pouvez créer 23 machines virtuelles de stockage supplémentaires pour un total de 24.</p>
 </li>
 <li>
 <p>Une LIF de gestion pour la machine virtuelle de stockage est facultative. Une LIF de gestion fournit une connexion à des outils de gestion tels que SnapCenter.</p>
