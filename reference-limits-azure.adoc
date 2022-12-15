@@ -22,7 +22,7 @@ Cloud Volumes ONTAP présente des limites de configuration du stockage pour assu
 
 La capacité système maximale d'un système Cloud Volumes ONTAP est déterminée par sa licence. La capacité système maximale inclut le stockage sur disque et le stockage objet utilisé pour le Tiering des données.
 
-NetApp ne prend pas en charge le dépassement de la limite de capacité système. Si vous atteignez la limite de capacité sous licence, Cloud Manager affiche un message d'action requise et ne vous permet plus d'ajouter des disques supplémentaires.
+NetApp ne prend pas en charge le dépassement de la limite de capacité système. Si vous atteignez la limite de capacité sous licence, BlueXP affiche un message d'action requise et ne vous permet plus d'ajouter des disques supplémentaires.
 
 [cols="25,75"]
 |===
@@ -385,7 +385,7 @@ Les machines virtuelles de stockage que vous configurez pour la reprise après i
 |===
 Remarques :
 
-. Cloud Manager ne prend pas en charge la configuration ou l'orchestration de la reprise après incident SVM. Il ne prend pas non plus en charge les tâches relatives au stockage sur une SVM supplémentaire. Vous devez utiliser System Manager ou l'interface de ligne de commande pour la reprise après incident SVM.
+. BlueXP ne propose pas de prise en charge de l'orchestration ou de la configuration pour la reprise après incident des SVM. Il ne prend pas non plus en charge les tâches relatives au stockage sur une SVM supplémentaire. Vous devez utiliser System Manager ou l'interface de ligne de commande pour la reprise après incident SVM.
 +
 ** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["Guide de préparation rapide pour la reprise après incident du SVM"^]
 ** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["Guide de reprise après incident de SVM Express"^]

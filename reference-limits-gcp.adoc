@@ -22,7 +22,7 @@ Cloud Volumes ONTAP présente des limites de configuration du stockage pour assu
 
 La capacité système maximale d'un système Cloud Volumes ONTAP est déterminée par sa licence. La capacité système maximale inclut le stockage sur disque et le stockage objet utilisé pour le Tiering des données.
 
-NetApp ne prend pas en charge le dépassement de la limite de capacité système. Si vous atteignez la limite de capacité sous licence, Cloud Manager affiche un message d'action requise et ne vous permet plus d'ajouter des disques supplémentaires.
+NetApp ne prend pas en charge le dépassement de la limite de capacité système. Si vous atteignez la limite de capacité sous licence, BlueXP affiche un message d'action requise et ne vous permet plus d'ajouter des disques supplémentaires.
 
 Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité en utilisant uniquement des disques. Vous pouvez atteindre la limite de capacité de https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. Pour plus de détails, reportez-vous aux limites de disques ci-dessous.
 
@@ -52,7 +52,7 @@ Pour certaines configurations, les limites de disque vous empêchent d'atteindre
 La limite de capacité s'adresse à l'ensemble de la paire haute disponibilité. Il n'est pas par nœud. Par exemple, si vous utilisez la licence Premium, vous pouvez disposer d'une capacité maximale de 368 To entre les deux nœuds.
 
 .Dans le cas d'une paire haute disponibilité, les données en miroir sont-elles prises en compte par rapport à la limite de capacité sous licence ?
-Non, ce n'est pas le cas. Les données d'une paire HA sont mises en miroir de manière synchrone entre les nœuds, de sorte que les données soient disponibles en cas de défaillance dans Google Cloud. Par exemple, si vous achetez un disque de 8 To sur le nœud A, Cloud Manager alloue également un disque de 8 To sur le nœud B utilisé pour les données en miroir. Bien que 16 To de capacité aient été provisionnés, seulement 8 To comptent par rapport à la limite de licence.
+Non, ce n'est pas le cas. Les données d'une paire HA sont mises en miroir de manière synchrone entre les nœuds, de sorte que les données soient disponibles en cas de défaillance dans Google Cloud. Par exemple, si vous achetez un disque de 8 To sur le nœud A, BlueXP alloue également un disque de 8 To sur le nœud B utilisé pour les données en miroir. Bien que 16 To de capacité aient été provisionnés, seulement 8 To comptent par rapport à la limite de licence.
 
 
 
@@ -152,7 +152,7 @@ Remarques :
 |===
 Remarques :
 
-. Cloud Manager ne prend pas en charge la configuration ou l'orchestration de la reprise après incident SVM. Il ne prend pas non plus en charge les tâches relatives au stockage sur une SVM supplémentaire. Vous devez utiliser System Manager ou l'interface de ligne de commande pour la reprise après incident SVM.
+. BlueXP ne propose pas de prise en charge de l'orchestration ou de la configuration pour la reprise après incident des SVM. Il ne prend pas non plus en charge les tâches relatives au stockage sur une SVM supplémentaire. Vous devez utiliser System Manager ou l'interface de ligne de commande pour la reprise après incident SVM.
 +
 ** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["Guide de préparation rapide pour la reprise après incident du SVM"^]
 ** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["Guide de reprise après incident de SVM Express"^]

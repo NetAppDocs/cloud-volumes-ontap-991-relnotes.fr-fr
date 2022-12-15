@@ -24,7 +24,7 @@ Le type de machine virtuelle Standard_L8S_v2 inclut le stockage NVMe local, util
 
 * La compression doit être désactivée sur tous les volumes pour tirer parti des améliorations des performances de Flash cache.
 +
-Vous pouvez choisir aucune efficacité du stockage lors de la création d'un volume depuis Cloud Manager, ou encore créer un volume, puis http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["Désactiver la compression des données à l'aide de l'interface de ligne de commande"^].
+Vous pouvez choisir l'absence d'efficacité du stockage lors de la création d'un volume depuis BlueXP, ou vous pouvez créer un volume puis http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["Désactiver la compression des données à l'aide de l'interface de ligne de commande"^].
 
 * La réactivation du cache après un redémarrage n'est pas prise en charge avec Cloud Volumes ONTAP.
 
