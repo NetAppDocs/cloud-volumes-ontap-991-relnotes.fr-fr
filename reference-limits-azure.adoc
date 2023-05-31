@@ -62,7 +62,7 @@ Les tableaux ci-dessous présentent la capacité maximale du système par taille
 
 
 
-NOTE: Vous pouvez acheter plusieurs licences basées sur des nœuds pour un système Cloud Volumes ONTAP BYOL afin d'allouer plus de 368 Tio de capacité. Le nombre de licences que vous pouvez acheter pour un système à un seul nœud ou une paire HA est illimité. Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de capacité en utilisant des disques seuls. Vous pouvez aller au-delà de la limite des disques de https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["Découvrez comment ajouter des licences système à Cloud Volumes ONTAP"^].
+NOTE: Vous pouvez acheter plusieurs licences basées sur des nœuds pour un système Cloud Volumes ONTAP BYOL afin d'allouer plus de 368 Tio de capacité. Le nombre de licences que vous pouvez acheter pour un système à un seul nœud ou une paire HA est illimité. Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de capacité en utilisant des disques seuls. Vous pouvez aller au-delà de la limite des disques de https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Découvrez comment ajouter des licences système à Cloud Volumes ONTAP"^].
 
 
 
@@ -314,7 +314,7 @@ Certaines configurations vous permettent de créer des machines virtuelles de st
 
 Ce sont les limites testées. Bien qu'il soit théoriquement possible de configurer des machines virtuelles de stockage supplémentaires, elles ne sont pas prises en charge.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-azure.html["Découvrez comment créer des machines virtuelles de stockage supplémentaires"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["Découvrez comment créer des machines virtuelles de stockage supplémentaires"^].
 
 [cols="2*"]
 |===

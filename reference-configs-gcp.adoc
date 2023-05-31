@@ -71,7 +71,7 @@ La mise à niveau d'un système à un seul nœud vers une paire haute disponibil
 |===
 Remarques :
 
-. Les limites de disques peuvent vous empêcher d'atteindre la limite de capacité maximale du système en utilisant des disques seuls. Vous pouvez atteindre la limite de capacité de https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^].
+. Les limites de disques peuvent vous empêcher d'atteindre la limite de capacité maximale du système en utilisant des disques seuls. Vous pouvez atteindre la limite de capacité de https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^].
 +
 link:reference-limits-gcp.html["En savoir plus sur les limites de disques dans Google Cloud"].
 
