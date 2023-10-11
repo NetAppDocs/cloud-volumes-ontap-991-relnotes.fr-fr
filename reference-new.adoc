@@ -150,7 +150,7 @@ http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-clou
 * La mise à niveau d'une paire haute disponibilité s'effectue sans interruption et les E/S sont continues. Au cours de ce processus de mise à niveau sans interruption, chaque nœud est mis à niveau en tandem afin de continuer à traiter les E/S aux clients.
 * Dans AWS, les types d'instances EC2 c4, m4 et r4 ne sont plus pris en charge par les nouveaux déploiements Cloud Volumes ONTAP. Si un système existant s'exécute sur un type d'instance c4, m4 ou r4, vous devez passer à un type d'instance dans la famille d'instances c5, m5 ou r5. Si vous ne pouvez pas modifier le type d'instance, vous devez activer la mise en réseau améliorée avant de procéder à la mise à niveau.
 +
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrades-in-aws-with-c4-m4-and-r4-ec2-instance-types["Découvrez comment effectuer une mise à niveau dans AWS avec les types d'instances EC2 c4, m4 et r4^."]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrades-in-aws-with-c4-m4-and-r4-ec2-instance-types["Découvrez comment effectuer une mise à niveau dans AWS avec les types d'instances EC2 c4, m4 et r4"^].
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Découvrez comment modifier le type d'instance EC2 pour Cloud Volumes ONTAP"^].
 
 +
