@@ -201,4 +201,4 @@ Les bandes passantes présentées dans le tableau ci-dessous correspondent aux l
 
 == Régions prises en charge
 
-Pour la prise en charge de chaque région AWS, consultez la section https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+Pour la prise en charge des régions AWS, voir https://bluexp.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].

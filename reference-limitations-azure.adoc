@@ -44,6 +44,6 @@ Les limites suivantes affectent les paires HA Cloud Volumes ONTAP dans Microsoft
 * NFSv4 n'est pas pris en charge. NFSv3 est pris en charge.
 * Les paires HAUTE DISPONIBILITÉ ne sont pas prises en charge dans certaines régions.
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste des régions Azure prises en charge"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consultez la liste des régions Azure prises en charge"^]
 
 

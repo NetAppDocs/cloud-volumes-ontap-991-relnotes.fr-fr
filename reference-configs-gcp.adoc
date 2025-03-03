@@ -82,7 +82,7 @@ Si vous disposez d'un système existant fonctionnant sur ce type de machine, vou
 
 . Les performances d'écriture améliorées sont activées lorsque l'utilisation de disques SSD est utilisée.
 . L'interface BlueXP affiche un type de machine supplémentaire pris en charge pour Standard et BYOL : n1-highmem-4. Toutefois, ce type de machine n'est pas destiné aux environnements de production. Nous l'avons disponible pour un environnement de laboratoire spécifique uniquement.
-. Pour la prise en charge par région Google Cloud Platform, rendez-vous sur https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+. Pour obtenir une prise en charge par région de Google Cloud Platform, consultezla section https://bluexp.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
 . Cloud Volumes ONTAP peut être exécuté sur une instance de machine virtuelle réservée ou à la demande auprès de votre fournisseur cloud. Les solutions qui utilisent d'autres types d'instances VM ne sont pas prises en charge.
 
 
